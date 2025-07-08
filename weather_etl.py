@@ -35,7 +35,7 @@ class WeatherETL:
     def connect_to_database(self) -> bool:
         
         try:
-            # Create connection string for SQLite
+            #creating connection string for SQLite
             conn_str = f"sqlite:///{self.db_path}"
             
             self.engine = create_engine(conn_str)
@@ -51,7 +51,7 @@ class WeatherETL:
     def create_tables(self):
 
         try:
-            # Earth Weather Data Table
+            #weather data table schema
             earth_weather_table = """
             CREATE TABLE IF NOT EXISTS earth_weather_data (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
