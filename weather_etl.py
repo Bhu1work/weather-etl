@@ -27,7 +27,7 @@ class WeatherETL:
         initializing pipeline
         '''
         self.db_path = db_path
-        #self.nasa_api_key = nasa_api_key or "DEMO_KEY"
+        #self.nasa_api_key = nasa_api_key 
         self.engine = None
         self.connection = None
         self.logger = logging.getLogger(__name__)
